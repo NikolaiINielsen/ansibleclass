@@ -72,11 +72,11 @@
 
   - name: IP address info webserver
     debug:
-      msg: "{{ webserver.instance.ipv6 }}"
+      msg: "{{ webserver.instance.ipv4 }}"
 
   - name: Set Fact webserver_ip_fact
     set_fact:
-    webserver_ip_fact: "{{ webserver.instance.ipv6 }}"
+    webserver_ip_fact: "{{ webserver.instance.ipv4 }}"
 
   - name: IP address info
     debug:

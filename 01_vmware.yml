@@ -60,4 +60,4 @@
       networks:
       - name: "{{ portgroup_name }}"
       wait_for_ip_address: "yes"
-    register: "webserver_{{ nfs_user }}"
+    register: "webserver"
